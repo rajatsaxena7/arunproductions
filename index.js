@@ -13,8 +13,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "meeday@mediatekevents.online",
-    pass: "Gully@!23",
+    user: "info@gully2global.com",
+    pass: "Shasudigi@217",
   },
 });
 
@@ -615,7 +615,7 @@ app.post("/event", async (req, res) => {
 
   try {
     let info = await transporter.sendMail({
-      from: "meeday@mediatekevents.online", // Sender address
+      from: "info@gully2global.com", // Sender address
       to: email, // List of receivers
       subject: `Registration pass for ${eventname}`, // Subject line
       html: htmlContent, // HTML body content
@@ -669,7 +669,7 @@ app.post("/feedback", async (req, res) => {
 
   try {
     let info = await transporter.sendMail({
-      from: "meeday@mediatekevents.online", // Sender address
+      from: "info@gully2global.com", // Sender address
       to: email, // List of receivers
       subject: "Feedback", // Subject line
       html: htmlContent, // HTML body content
